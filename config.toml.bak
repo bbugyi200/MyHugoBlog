@@ -12,7 +12,7 @@ disqusShortname = "bryanbugyi"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
 [Params]
-    tagline = "“Before software can be reusable it first has to be usable.” – Ralph Johnson"
+    tagline = "The best thing about a boolean is even if you are wrong, you are only off by a bit."
     author = "Bryan Bugyi"
     description = "Software Engineer in training. Currently studying Computer Science and Mathematics at Rutgers University. I am on track to graduate in the Spring of 2018."
     logoBig = ""
