@@ -1,1 +1,1 @@
-{"gp": "git push prod master; git push origin master \"$@\""}
+{"gp": "git push prod master; git push origin master \"$@\"", "a": "vim ./content/about.md \"$@\"", "G": "gcan! && git push -f prod master && gpf \"$@\""}

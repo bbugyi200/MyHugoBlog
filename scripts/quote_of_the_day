@@ -1,0 +1,10 @@
+#!/bin/bash
+
+############################################
+#  Change out the tagline on Hugo Website  #
+############################################
+
+cd /home/bryan/projects/MyHugoBlog || exit 1
+./scripts/generate_quote
+git commit -a -m "New Quote of the Day"
+git push prod master
