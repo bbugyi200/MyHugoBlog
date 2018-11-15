@@ -5,4 +5,4 @@
 ###################################################
 
 quote_of_the_day="$(shuf -n 1 /home/bryan/projects/MyHugoBlog/quotes)"
-sed -i.bak "s/.*tagline = .*/    tagline = '${quote_of_the_day}'/" /home/bryan/projects/MyHugoBlog/config.toml
+sed -i.bak "s/.*tagline = .*/    tagline = """${quote_of_the_day}"""/" /home/bryan/projects/MyHugoBlog/config.toml
