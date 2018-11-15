@@ -1,3 +1,47 @@
-baseURL = "http://example.org/"
+baseURL = "http://bryanbugyi.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "The Bugyi Blog"
+newContentEditor = "vim"
+pygmentsStyle = "native"
+tags = ["portfolio", "web design", "blog"]
+config = "config.toml"
+theme = "osprey"
+canonifyURLS = true
+googleAnalytics = ""
+disqusShortname = "bryanbugyi"
+disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
+
+[Params]
+    tagline = "Why isn't this automated yet?"
+    author = "Bryan Bugyi"
+    description = "Software Engineer in training. Currently studying Computer Science and Mathematics at Rutgers University. I am on track to graduate in the Spring of 2018."
+    logoBig = ""
+    logoSmall = ""
+    favicon = ""
+    opengraphImage = ""
+    twitter = "bryan_bugyi"
+    linkedin = "bryanbugyi"
+    github = "bbugyi200"
+    facebook = ""
+    email = "bryanbugyi34@gmail.com"
+    googleTagManager = ""
+    highlightJS = true
+    copyright = true
+    credit = true
+    customCSS = false
+    cacheBustCSS = false
+    cacheBustJS = false
+    ajaxFormspree = true
+
+[[menu.main]]
+    name = "About"
+    url  = "/#about"
+    weight = 1
+[[menu.main]]
+    name = "Blog"
+    url  = "/#blog"
+    weight = 2
+[[menu.main]]
+    name = "Contact"
+    url  = "/#contact"
+    weight = 3
