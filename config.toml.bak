@@ -12,7 +12,7 @@ disqusShortname = "bryanbugyi"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
 [Params]
-    tagline = """"They don't make bugs like Bunny anymore." - Olav Mjelde."""
+    tagline = '“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler'
     author = "Bryan Bugyi"
     description = "Software Engineer in training. Currently studying Computer Science and Mathematics at Rutgers University. I am on track to graduate in the Spring of 2018."
     logoBig = "/img/BB-256.svg"
