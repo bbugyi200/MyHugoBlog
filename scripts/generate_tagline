@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ###################################################
-#  Generate Random CS Joke for Hugo Blog Tagline  #
+#  Generate Random CS quote for Hugo Blog Tagline  #
 ###################################################
 
-joke_of_the_day="$(shuf -n 1 /home/bryan/projects/MyHugoBlog/jokes)"
-sed -i.bak "s/.*tagline = .*/    tagline = \"${joke_of_the_day}\"/" /home/bryan/projects/MyHugoBlog/config.toml
+quote_of_the_day="$(shuf -n 1 /home/bryan/projects/MyHugoBlog/quotes)"
+sed -i.bak "s/.*tagline = .*/    tagline = \"${quote_of_the_day}\"/" /home/bryan/projects/MyHugoBlog/config.toml
