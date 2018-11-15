@@ -12,7 +12,7 @@ disqusShortname = "bryanbugyi"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
 [Params]
-    tagline = '"Measuring programming progress by lines of code is like measuring aircraft building progress by weight." - Bill Gates'
+    tagline = '"We build our computer (systems) the way we build our cities: over time, without a plan, on top of ruins." - Ellen Ullman'
     author = "Bryan Bugyi"
     description = "Software Engineer in training. Currently studying Computer Science and Mathematics at Rutgers University. I am on track to graduate in the Spring of 2018."
     logoBig = ""
