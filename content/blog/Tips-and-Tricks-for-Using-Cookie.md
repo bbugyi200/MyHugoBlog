@@ -28,7 +28,7 @@ We will illustrate both methods using the same template: [hw.tex]. Notice that t
 hw() { ASSIGNMENT_NUMBER="$1" cookie -T hw.tex -f "${@:2}" HW"$1"/hw"$1".tex; }
 ```
 
-This one-liner function takes care of one of the variable definitions, but what about the other three? For the rest of the variables, I use a technique (OK fine... a *hack*) that enables me to define a local zshrc file (more or less). This is made possible by the following section of my zshrc config:
+This one-liner function takes care of one of the variable definitions, but what about the other three? For the rest of the variables, I use a technique (okay fine... a *hack*) that enables me to define a local zshrc file (more or less). This is made possible by the following section of my zshrc config:
 
 ``` bash
 chpwd() {
