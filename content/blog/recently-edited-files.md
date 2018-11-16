@@ -6,7 +6,7 @@ description = "Learn how you can keep a list of your most recently edited files 
 
 ## Introduction
 
-The most important files are the ones that we've used most recently. So it makes sense that we would want to keep a list of such files.
+Your most important files are the ones that you've used most recently. So it makes sense that we would want to keep a list of such files.
 
 With this goal in mind, I propose using the following script to wrap vim:
 
@@ -41,7 +41,7 @@ for arg in "$@"; do
 done
 ```
 
-To make this work you need to export `VIM_LOG_PATH` to some suitable log file path (in your `bashrc`/`zshrc` file), name the script above `vim`, and then place it onto your system's `PATH`. After these steps are complete, any files that you open in vim will be logged to this file.
+To make this work you need to export `RECENTLY_EDITED_FILES_LOG` to some suitable log file path (in your `bashrc`/`zshrc` file), name the script above `vim`, make it executable, and then place it onto your system's `PATH`. After these steps are complete, any files that you open in vim will be logged to this file.
 
 {{% notice note %}}
 If you use another editor besides vim, you can still use this script. You just have to make sure the name of the script matches the name of your editor. There is no need to make any changes to the script above.
@@ -73,6 +73,6 @@ alias vgrep='cat $RECENTLY_EDITED_FILES_LOG | xargs grep'
 
 * Checkout the [vim-startify] plugin for a heavier (but more powerful) alternative to the script discussed above.
 
-* The `:oldfiles` command in vim produces a list of recently edited files. Run `:h :oldfiles` from within vim for more information.
+* The `:oldfiles` command in vim produces a list of recently edited files. For more information, run `:h :oldfiles` from within vim.
 
 [vim-startify]: https://github.com/mhinz/vim-startify

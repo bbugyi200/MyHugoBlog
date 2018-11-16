@@ -22,7 +22,28 @@ OR
 
 2) Export the desired environment variables at *some* point before running `cookie`.
 
-We will illustrate both methods using the same template: [hw.tex]. Notice that this template expects four template variables to be specified: `ASSIGNMENT_NUMBER`, `DEPARTMENT`, `COURSE`, and `SECTION`. Instead of running `cookie` directly for a template like this, I've found that it is easier to define a shell function that wraps the `cookie` command:
+We will illustrate both methods using the hw.tex template: 
+
+{{< highlight TeX >}}
+\documentclass[12pt]{article}
+
+\title{HW \#{{ ASSIGNMENT_NUMBER }}~-~{{ DEPARTMENT }} {{ COURSE }}:{{ SECTION }}\vspace{-0.5cm}}
+\author{Bryan Bugyi\\\today}
+\date{}
+
+\input{/home/bryan/Dropbox/scripts/modules/latex/HW.tex}
+
+\begin{document}
+\maketitle
+\section*{Solutions}
+\begin{enumerate}
+   \item
+{% START INSERT MODE %}
+\end{enumerate}
+\end{document}
+{{< /highlight >}}
+
+Notice that this template expects four template variables to be specified: `ASSIGNMENT_NUMBER`, `DEPARTMENT`, `COURSE`, and `SECTION`. Instead of running `cookie` directly for a template like this, I've found that it is easier to define a shell function that wraps the `cookie` command:
 
 ``` bash
 hw() { ASSIGNMENT_NUMBER="$1" cookie -T hw.tex -f "${@:2}" HW"$1"/hw"$1".tex; }
@@ -65,10 +86,10 @@ For example, the following hook definition (placed in cookie's [config] file) wi
 EXEC_CMD_HOOK="ln -s \${TARGET} /usr/local/bin/\$(basename \${TARGET})"
 ```
 
-## BONUS: Convenient Vim Bindings
+## Extra Credit: Vim Bindings to Open Cookie Templates
 When working on a new script / config / whatever in vim, it is common for me to want to navigate to (one of) the cookie template(s) that corresponds to that filetype. This seems like it might be difficult to automate since one can have an arbitrary number of cookie templates for any given filetype. Fortunately, vimscript is more versatile (though perhaps just as ugly) than you might have thought. The following vimscript function will return the nth cookie template (in alphabetical order) with the same filetype as the current working document:
 
-```vim
+{{< highlight Vim >}}
 function! Cookie(n)
     let ext = &filetype
 
@@ -81,17 +102,17 @@ function! Cookie(n)
     let templates = systemlist('cookie -l | grep \.' . ext)
     return '/home/bryan/.cookiecutters/' . templates[a:n]
 endfunction
-```
+{{< /highlight >}}
 
 With that out of the way, we are now just a few short vim mappings away from having our cookie templates at our fingertips whenever we need them:
 
-```vim
+{{< highlight Vim >}}
 nnoremap <Leader>t1 :execute 'edit' Cookie(0)<CR>
 nnoremap <Leader>t2 :execute 'edit' Cookie(1)<CR>
 nnoremap <Leader>t3 :execute 'edit' Cookie(2)<CR>
 ...
 nnoremap <Leader>tn :execute 'edit' Cookie(n)<CR>
-```
+{{< /highlight >}}
 
 [cookie]: https://github.com/bbugyi200/cookie
 [jinja]: https://github.com/pallets/jinja

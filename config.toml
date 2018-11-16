@@ -2,7 +2,8 @@ baseURL = "http://bryanbugyi.com/"
 languageCode = "en-us"
 title = "A Tech Blog by Bryan Bugyi"
 newContentEditor = "vim"
-pygmentsStyle = "native"
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
 tags = ["portfolio", "web design", "blog"]
 config = "config.toml"
 theme = "osprey"
@@ -12,7 +13,7 @@ disqusShortname = "bryanbugyi"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
 [Params]
-    tagline = """"One of my most productive days was throwing away 1000 lines of code." - Ken Thompson"""
+    tagline = """"A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want."- Niklaus Wirth"""
     author = "Bryan Bugyi"
     description = "Software Engineer in training. Currently studying Computer Science and Mathematics at Rutgers University. I am on track to graduate in the Spring of 2018."
     logoBig = "/images/BB-256.svg"
