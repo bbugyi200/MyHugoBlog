@@ -6,13 +6,13 @@ draft: false
 
 As far as time-saving applications go, [cookie] is quickly becoming one of my favorites. In case you haven't heard of cookie before, I'll start this post off by giving a quick micro-tutorial of the tool.
 
-As the title of this post suggests, cookie is a "Template-based File Generator". But what does that mean? It's just like it sounds really. cookie templates are stored in `~/.cookiecutters`. Each template contains an arbitrary number of template variables which are specified using a syntax similar to that used by the [jinja] templating engine (e.g. `{{ variable }}`). When you initialize a new file, cookie looks to insert a value in place of each template variable. The user (you) is expected to provide those values on the command-line (cookie will prompt you). After all template variables are accounted for, cookie opens up the newly created file in your system's default editor.
+As the title of this post suggests, cookie is a "Template-based File Generator". But what does that mean? It's just like it sounds really. cookie templates are stored in `~/.cookiecutters`. Each template contains an arbitrary number of template variables which are specified using a syntax similar to that used by the [jinja] templating engine (e.g. `{{ variable }}`). When you initialize a new file, cookie looks to insert a value in place of each template variable. The user (you) provides those values on the command-line when prompted (see [this tip](https://bryanbugyi.com/blog/tips-and-tricks-for-using-cookie/#envvars) for a better way). After all template variables are accounted for, cookie opens up the newly created file in your system's default editor.
 
 That's the short version. For the full story, checkout cookie's [homepage][cookie] or follow along with the demonstration GIF below. Once you've got a grip on the basics, your ready for this article's main course.
 
 ![demo]
 
-## Template Variables Inherit from your System's Environment Variables
+## <a name="envvars">Template Variables Inherit from your System's Environment Variables</a>
 
 Cookie is all about speed and convenience. But there is nothing convenient about manually typing out a half-dozen variable values every time you initialize a new script. Thankfully, there's another way. Before prompting the user to manually specify variable values on the command-line, cookie will check the currently defined environment variables. There are two ways to take advantage of this:
 
@@ -22,7 +22,7 @@ OR
 
 2) Export the desired environment variables at *some* point before running `cookie`.
 
-We will illustrate both methods with the same template: [hw.tex]. Notice that this template expects four template variables to be specified: `ASSIGNMENT_NUMBER`, `DEPARTMENT`, `COURSE`, and `SECTION`. Instead of running `cookie` directly for a template like this, I've found that it is easier to define a shell function that wraps the `cookie` command:
+We will illustrate both methods using the same template: [hw.tex]. Notice that this template expects four template variables to be specified: `ASSIGNMENT_NUMBER`, `DEPARTMENT`, `COURSE`, and `SECTION`. Instead of running `cookie` directly for a template like this, I've found that it is easier to define a shell function that wraps the `cookie` command:
 
 ``` bash
 hw() { ASSIGNMENT_NUMBER="$1" cookie -T hw.tex -f "${@:2}" HW"$1"/hw"$1".tex; }
@@ -47,7 +47,7 @@ export COURSE=314
 export SECTION=02
 ```
 
-When I'm ready to start my 5th homework assignment (for example) I travel to the directory where all of my "Programming Languages" course material is and then run `hw 5`. All of the template variables are then substituted with the appropriate values, the new file is opened up in an editor, and I can get started on my homework.
+When I'm ready to start my 5th homework assignment (for example) I travel to the directory where all of my "Programming Languages" course material is and then run `hw 5`. All of the template variables are then substituted with the appropriate values and the new file is opened up in an editor so I can get started on my homework.
 
 ## The Power of the EXEC_HOOK_CMD
 
@@ -59,10 +59,10 @@ If you pass the `-x` option to the `cookie` command, the executable bit of the n
 ### Advanced
 The `-x` option does more than just set the executable bit, however. When you specify that you are working with an executable script, cookie also runs whatever hook command (if any) is specified in cookie's [config] file. The `TARGET` variable is set to the full path of the new file and is injected into the hook command's environment prior to running the command. It is important to note that in order for your hook command to take advantage of the `TARGET` variable, you must escape the `$` symbol.
 
-For example, the following hook definition (placed in cookie's [config] file) will create a symbolic link from the new executable script to the `/usr/bin` directory (thus placing the script on your system's `PATH`):
+For example, the following hook definition (placed in cookie's [config] file) will create a symbolic link from the new executable script to the `/usr/local/bin` directory (thus placing the script on your system's `PATH`):
 
 ``` bash
-EXEC_CMD_HOOK="ln -s \${TARGET} /usr/bin/\$(basename \${TARGET})"
+EXEC_CMD_HOOK="ln -s \${TARGET} /usr/local/bin/\$(basename \${TARGET})"
 ```
 
 ## BONUS: Convenient Vim Bindings
