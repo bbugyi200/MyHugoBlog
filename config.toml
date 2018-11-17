@@ -13,7 +13,7 @@ disqusShortname = "bryanbugyi"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
 [Params]
-    tagline = """"A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want."- Niklaus Wirth"""
+    tagline = """"There is nothing more unproductive than to build something efficiently that should not have been built at all." - Milt Bryce"""
     author = "Bryan Bugyi"
     description = "Software Engineer in training. Currently studying Computer Science and Mathematics at Rutgers University. I am on track to graduate in the Spring of 2018."
     logoBig = "/images/BB-256.svg"
