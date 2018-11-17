@@ -17,7 +17,7 @@
                   {{ .Content }}
               </article>
 
-              {{ partial "my_projects.html" }}
+              <hr>
 
               <div class="pagination">
                   {{ if .PrevInSection }}
@@ -27,6 +27,9 @@
                       <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &raquo;</a>
                   {{ end }}
               </div>
+
+              {{ partial "my_projects.html" }}
+
           </section>
           <br>
           {{ partial "disqus" . }}
