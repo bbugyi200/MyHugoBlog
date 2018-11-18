@@ -126,6 +126,10 @@ let g:comment_char = '#'
 
 For more information on the `ftplugin` directory, run `:h ftplugin` from within vim. The rest of the code can be copied directly into your `vimrc` file.
 
+{{% notice note %}}
+In languages with two comment characters (e.g. `//` in C/C++/Java, `--` in Haskell/SQL) you still only want to set `g:comment_char` to a single character (e.g. `/` or `-`).
+{{% /notice %}}
+
 Finally, I have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
 
 {{< highlight Vim >}}
