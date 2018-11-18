@@ -124,7 +124,13 @@ the comments.**
 
 ## The Setup
 
-You first need to set the `g:comment_char` variable, which is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory (run `:h ftplugin` in vim for more information). The rest of the code can be copied directly into your `vimrc` file.
+You first need to set the `g:comment_char` variable, which is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory. For example, I have the following line in `~/.vim/ftplugin/sh.vim`:
+
+``` bash
+let g:comment_char = '#'
+```
+
+For more information on the `ftplugin` directory, run `:h ftplugin` from within vim. The rest of the code can be copied directly into your `vimrc` file.
 
 Finally, I have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
 
