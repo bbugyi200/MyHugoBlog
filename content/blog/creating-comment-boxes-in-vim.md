@@ -94,7 +94,7 @@ endf
 
 ## The Setup
 
-There are two values you may need to adjust manually:
+There are two variables you will need to adjust manually:
 
 * The `g:max_line` variable specified the size of the top and bottom comment bars (`MakeBar` needs a fixed size).
 
