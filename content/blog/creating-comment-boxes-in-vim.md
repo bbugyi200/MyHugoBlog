@@ -18,10 +18,8 @@ system, I still use comment boxes, and you can too.
 
 In the below code snippet, you'll find a definition for the `MakeBox` vimscript
 function. This function can be used to help create and maintain comment boxes
-in any language that has a single character comment specifier (e.g. `#` in
-bash, `"` in vimscript, `%` in LaTeX), but it would be simple enough
-to enhance `MakeBox` so it can handle other comment forms (e.g. `//` in Javascript, `/* ...
-*/` in C/C++, `--` in Haskell).
+in any language that has a single line comment specification (e.g. `//`
+not `/* ... */`).
 
 {{< highlight Vim >}}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -31,44 +29,25 @@ to enhance `MakeBox` so it can handle other comment forms (e.g. `//` in Javascri
 " and the cursor needs to be between the bars when 'MakeBox' is called.       "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! MakeBox()
-    execute "normal 0"
-    let current_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-    execute "normal l"
-    let next_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-    while current_ch != g:comment_char || next_ch != g:comment_char
-        execute "normal k0"
-        let current_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-        execute "normal l"
+    let triple_comment = g:comment_char . g:comment_char . g:comment_char
 
-        let c = col('.')
-        if c == 1
-            let next_ch = ''
-        else
-            let next_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-        endif
-    endwhile
+    let curr_line = getline('.')
+    while curr_line[0:2] != triple_comment
+        execute "normal k"
+        let curr_line = getline('.')
+    endw
 
     execute "normal $"
     let max_line = col('.')
 
     call MakeBoxBar(max_line)
 
-    execute "normal j0"
-    let current_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-    execute "normal l"
-    let next_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-    while current_ch != g:comment_char || next_ch != g:comment_char
+    execute "normal j"
+    let curr_line = getline('.')
+    while curr_line[0:2] != triple_comment
+        let curr_line = getline('.')
         call MakeBoxLine(max_line)
-        execute "normal j0"
-        let current_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-        execute "normal l"
-
-        let c = col('.')
-        if c == 1
-            let next_ch = ''
-        else
-            let next_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-        endif
+        execute "normal j"
     endw
 
     call MakeBoxBar(max_line)
@@ -100,10 +79,19 @@ function! MakeBoxLine(max_line)
         execute "normal i" . g:comment_char . " "
     endif
 
+    if g:comment_char == '/' || g:comment_char == '-'
+        execute "normal 0l"
+        let ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
+        let column_number = col('.')
+        if ch != g:comment_char
+            execute "normal i" . g:comment_char
+        endif
+    endif
+
     let _ = cursor(line('.'), a:max_line)
     let column_number = col('.')
     let current_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-    if column_number != 1
+    if column_number != 1 && ((g:comment_char != '/' && g:comment_char != '-') || column_number != 2)
         if current_ch == g:comment_char || column_number == a:max_line
             execute "normal D"
             let column_number = col('.')
