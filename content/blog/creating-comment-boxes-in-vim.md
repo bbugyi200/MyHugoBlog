@@ -59,9 +59,9 @@ function! MakeBox()
     call s:BoxBar()
 endfunction
 
-""""""""""""""""""""""""""""""""""""
-"  Helper Functions for 'MakeBox'  "
-""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""
+"  Helper functions. "
+""""""""""""""""""""""
 function! s:EndOfBox()
     execute "normal 0"
     let ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
