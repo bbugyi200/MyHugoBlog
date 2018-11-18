@@ -2,6 +2,7 @@
 title: "cookie: Advanced Tips and Tricks"
 date: 2018-11-15T03:47:43Z
 draft: false
+image = "https://bryanbugyi.com/images/BB.jpeg"
 ---
 
 As far as time-saving applications go, [cookie] is quickly becoming one of my favorites. In case you haven't heard of cookie before, I'll start this post off by giving a quick micro-tutorial of the tool.
