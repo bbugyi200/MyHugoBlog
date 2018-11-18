@@ -146,12 +146,11 @@ nnoremap <Leader># :call MakeBox()<CR>
 
 Here's a look at the `MakeBox` function in action:
 
+<img src="/images/MakeBox_Demo.gif" alt="Demonstration GIF for MakeBox Function"/>
 <hr>
 
 ## ChangeLog
 
 * Edited the source code of the `MakeBox` function to adhere to a few of the best practices adviced by **statox42** in [this][vim-reddit] discussion.
-
-<img src="/images/MakeBox_Demo.gif" alt="Demonstration GIF for MakeBox Function"/>
 
 [vim-reddit]: https://www.reddit.com/r/vim/comments/9y5sel/vimscript_solution_for_maintaining_comment_boxes/
