@@ -6,7 +6,7 @@ description = "Description and demonstration of the MakeBox vimscript function I
 
 Even though I know it's not normally considered a good practice, I still
 like to use comment boxes from time to time. These are especially handy
-in bash files to write comments about the script at the top.
+in bash scripts to write comments about the script at the top.
 
 The reason they are generally considered a bad practice is that they are
 difficult to change and thus encourage stale documentation. I still
