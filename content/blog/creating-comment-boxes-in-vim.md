@@ -79,7 +79,9 @@ function! MakeBoxLine(max_line)
         execute "normal i" . g:comment_char . " "
     endif
 
-    if g:comment_char == '/' || g:comment_char == '-'
+    let do_double = index(['/', '-'], g:comment_char) >= 0
+
+    if do_double
         execute "normal 0l"
         let ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
         let column_number = col('.')
@@ -91,7 +93,7 @@ function! MakeBoxLine(max_line)
     let _ = cursor(line('.'), a:max_line)
     let column_number = col('.')
     let current_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
-    if column_number != 1 && ((g:comment_char != '/' && g:comment_char != '-') || column_number != 2)
+    if column_number != 1 && (do_double != 1 || column_number != 2)
         if current_ch == g:comment_char || column_number == a:max_line
             execute "normal D"
             let column_number = col('.')
@@ -102,6 +104,10 @@ function! MakeBoxLine(max_line)
         execute "normal a "
     endwhile
     execute "normal a" . g:comment_char
+
+    if do_double
+        execute "normal hr" . g:comment_char
+    endif
 endfunction
 {{< /highlight >}}
 
