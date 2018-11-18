@@ -2,7 +2,7 @@
 title = "Comment Boxes. Bad Practice? Or just misunderstood?"
 date = 2018-11-18T01:34:35-05:00
 description = "Comment boxes are visually appealling but hard to maintain. In this post, I recommend a vimscript solution that makes comment boxes a viable option again."
-image = "https://bryanbugyi.com/images/BB-128.jpeg"
+image = "https://bryanbugyi.com/images/BB-128.png"
 +++
 
 Even though I know it's not normally considered a good practice, I still
