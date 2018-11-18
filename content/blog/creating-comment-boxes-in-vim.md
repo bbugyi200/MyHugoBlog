@@ -108,7 +108,7 @@ nnoremap <Leader># :call MakeBox()<CR>
 
 ## The Demo
 
-Here's a look at `MakeBox` in action:
+Here's a look at the `MakeBox` function in action:
 
 <img src="/images/MakeBox_Demo.gif" alt="Demonstration GIF for MakeBox Function"/>
 
