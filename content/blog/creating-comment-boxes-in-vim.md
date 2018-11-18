@@ -10,7 +10,7 @@ in bash files to write comments about the script at the top.
 
 The reason they are generally considered a bad practice is that they are
 difficult to change and thus encourage stale documentation. I still
-advice that you not use comment boxes in the real world since not everyone on your
+advice that you don't use comment boxes in the real world since not everyone on your
 team will have read this amazing post :smile:. But for small scripts on my own
 system, I still use comment boxes, and you can too.
 
@@ -100,7 +100,7 @@ There are two values you may need to adjust manually:
 
 The `g:comment_char` variable is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory (see `:h ftplugin` in vim for more information). The rest of the code can simply be copied into your `vimrc` file.
 
-Finally, I have the following mapping defined in my `vimrc` which you can use as is, customize to your liking, or just call `MakeBox` directly: 
+Finally, I have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
 
 {{< highlight Vim >}}
 nnoremap <Leader># :call MakeBox()<CR>
