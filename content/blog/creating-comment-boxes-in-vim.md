@@ -131,7 +131,7 @@ endfunction
 {{< /highlight >}}
 
 Now, you should know that I'm new to the language so you probably shouldn't use
-the code above as an example of proper vimscript. In fact, if you spot an error
+the above code as an example of proper vimscript. In fact, if you spot an error
 or know of better practices that I should be following, **please let me know in
 the comments.**
 
@@ -141,7 +141,7 @@ I have hard-coded the comment characters for various languages at the top of the
 
 ## The Setup
 
-Just copy the code above into you `vimrc` file. I also have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
+Just copy the above code into you `vimrc` file. I also have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
 
 {{< highlight Vim >}}
 nnoremap <Leader># :call MakeBox()<CR>
