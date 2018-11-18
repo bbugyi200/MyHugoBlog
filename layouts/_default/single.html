@@ -10,7 +10,7 @@
               <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
 
               <div class="sub-header">
-                   <a href="https://bryanbugyi.com/index.xml" style="background-image:none;"><img src="/images/RSS.png" style="display: inline-block;" width="16" height="16"/></a> {{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ .ReadingTime }} minute read
+                    {{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ .ReadingTime }} minute read &emsp; <a href="https://bryanbugyi.com/index.xml" style="background-image:none;"><img src="/images/RSS.png" style="display: inline-block;" width="16" height="16"/></a>
               </div>
 
               <article class="entry-content">
