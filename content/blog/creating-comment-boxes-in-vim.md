@@ -29,6 +29,18 @@ not `/* ... */`).
 " and the cursor needs to be between the bars when 'MakeBox' is called.       "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! MakeBox()
+    if index(['sh', 'python', 'ruby'], &ft) >= 0
+        let g:comment_char = '#'
+    elseif index(['c', 'cpp', 'java', 'javascript', 'php'], &ft) >= 0
+        let g:comment_char = '/'
+    elseif index(['haskell', 'sql'], &ft) >= 0
+        let g:comment_char = '-'
+    elseif index(['tex'], &ft) >= 0
+        let g:comment_char = '%'
+    elseif index(['vim'], &ft) >= 0
+        let g:comment_char = '"'
+    endif
+
     let triple_comment = g:comment_char . g:comment_char . g:comment_char
 
     let curr_line = getline('.')
@@ -118,23 +130,15 @@ the comments.**
 
 ## The Setup
 
-You first need to set the `g:comment_char` variable, which is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory. For example, I have the following line in my `~/.vim/ftplugin/sh.vim` file:
-
-``` bash
-let g:comment_char = '#'
-```
-
-For more information on the `ftplugin` directory, run `:h ftplugin` from within vim. The rest of the code can be copied directly into your `vimrc` file.
-
-{{% notice note %}}
-In languages with two comment characters (e.g. `//` in C/C++/Java or `--` in Haskell/SQL) you still only want to set `g:comment_char` to a single character (e.g. `/` or `-`).
-{{% /notice %}}
-
-Finally, I have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
+Just copy the code above into you `vimrc` file. I also have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
 
 {{< highlight Vim >}}
 nnoremap <Leader># :call MakeBox()<CR>
 {{< /highlight >}}
+
+{{% notice note %}}
+I have hard-coded the comment characters for various languages at the top of the `MakeBox` function. If your language is not listed there, you will have to make sure to add it manually.
+{{% /notice %}}
 
 ## The Demo
 
