@@ -4,6 +4,13 @@ date = 2018-11-18T01:34:35-05:00
 description = "Description and demonstration of the MakeBox vimscript function I use to help me maintain comment boxes."
 +++
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@bryanbugyi.com">
+<meta name="twitter:creator" content="@bryan_bugi">
+<meta name="twitter:title" content="Comment Boxes. Bad Practice? Or just misunderstood?">
+<meta name="twitter:description" content="Description and demonstration of the MakeBox vimscript function I use to help me maintain comment boxes.">
+<meta name="twitter:image" content="https://bryanbugyi.com/images/comment-box.png">
+
 Even though I know it's not normally considered a good practice, I still
 like to use comment boxes from time to time. These are especially handy
 in bash scripts to write comments about the script at the top.

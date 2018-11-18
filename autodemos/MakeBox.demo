@@ -5,5 +5,5 @@ o##[TAB]demo.sh
 <<0.1>>
 <<0.1>>((100))Watch what happens when I call MakeBox.<<1>>[ESC]ma,#<<2>>'a$gelcT#((100)) But what happens when I make changes?
 <<0.1>>
-<<0.1>>((100)) [ESC]i And even add new lines???<<1>> I just call MakeBox again.<<1>>[ESC],#<<3>>:q!
+<<0.1>>((100)) [ESC]i And even add new lines???<<1>> Well then I just call MakeBox again.<<1>>[ESC],#<<3>>:q!
 
