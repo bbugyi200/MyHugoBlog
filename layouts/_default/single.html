@@ -17,8 +17,6 @@
                   {{ .Content }}
               </article>
 
-              {{ partial "my_projects.html" }}
-
               <div class="pagination">
                   {{ if .PrevInSection }}
                       <a href="{{ .PrevInSection.Permalink }}">&laquo; {{ .PrevInSection.Title }}</a>
