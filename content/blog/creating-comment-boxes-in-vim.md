@@ -11,7 +11,7 @@ in bash scripts to write comments about the script at the top.
 The reason they are generally considered a bad practice is that they are
 difficult to change and thus encourage stale documentation. I still
 advice that you don't use comment boxes in the real world since not everyone on your
-team will have read this amazing post :laughing:. But for small scripts on my own
+team will have read this amazing post. But for small scripts on my own
 system, I still use comment boxes, and you can too.
 
 ## The Code
