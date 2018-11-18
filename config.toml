@@ -15,7 +15,7 @@ disqusShortname = "bryanbugyi"
 [Params]
     tagline = """"Measuring programming progress by lines of code is like measuring aircraft building progress by weight." - Bill Gates"""
     author = "Bryan Bugyi"
-    description = "Software Engineer in training. Currently studying Computer Science and Mathematics at Rutgers University. I am on track to graduate in the Spring of 2018."
+    description = "A blog focused on providing technical tips and tutorials on all things related to automation. In particular, the vim editor and the Unix commandline are covered often."
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     favicon = "favicon.ico"
