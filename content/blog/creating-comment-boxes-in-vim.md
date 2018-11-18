@@ -18,7 +18,7 @@ my own system, I still use comment boxes, and you can too.
 
 ## MakeBox Code
 
-The vimscript snippet below defines the `MakeBox` function.
+The following vimscript snippet defines the `MakeBox` function:
 
 {{< highlight Vim >}}
 """""""""""""""""""""""""""""""""""""""""
@@ -92,13 +92,21 @@ function! s:BoxBar()
 endf
 {{< /highlight >}}
 
-## Customizations
+## How to use this in your vim setup?
 
 There are two values you may need to adjust manually:
 
 * The `g:max_line` variable specified the size of the top and bottom comment bars (`MakeBar` needs a fixed size).
 
-* The `g:comment_char` variable defines the comment character of the language you are using and should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype of the language uses) inside the `ftplugin` directory (see `:h ftplugin` in vim for more information).
+* The `g:comment_char` variable defines the comment character of the language you are using.
+
+The `g:comment_char` variable is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory (see `:h ftplugin` in vim for more information). The rest of the code can simply be copied into your `vimrc` file.
+
+Finally, I have the following mapping defined in my `vimrc` which you can use as is, customize to your liking, or just call `MakeBox` directly: 
+
+{{< highlight Vim >}}
+nnoremap <Leader># :call MakeBox()<CR>
+{{< /highlight >}}
 
 ## Demo
 
