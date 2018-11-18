@@ -19,9 +19,9 @@ system, I still use comment boxes, and you can too.
 In the below code snippet, you'll find a definition for the `MakeBox` vimscript
 function. This function can be used to help create and maintain comment boxes
 in any language that has a single character comment specifier (e.g. `#` in
-bash, `"` in vimscript, `%` in LaTeX, ...), but it would be simple enough
+bash, `"` in vimscript, `%` in LaTeX), but it would be simple enough
 to enhance `MakeBox` so it can handle other comment forms (e.g. `//` in Javascript, `/* ...
-*/` in C/C++, `--` in Haskell, ...).
+*/` in C/C++, `--` in Haskell).
 
 {{< highlight Vim >}}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
