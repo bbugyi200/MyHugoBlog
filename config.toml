@@ -9,6 +9,7 @@ config = "config.toml"
 theme = "osprey"
 canonifyURLS = true
 googleAnalytics = "UA-129349538-1"
+enableEmoji = true
 disqusShortname = "bryanbugyi"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
