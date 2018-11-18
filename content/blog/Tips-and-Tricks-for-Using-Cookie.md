@@ -1,7 +1,7 @@
 +++
 title = "cookie: Advanced Tips and Tricks"
 date = 2018-11-15T03:47:43Z
-draft = false
+categories = ["commandline"]
 description="As far as time-saving applications go, cookie is quickly becoming one of my favorites. In this post, I provide a tutorial for some of cookie's more advanced features."
 image = "https://github.com/bbugyi200/cookie/blob/master/img/logo.png?raw=true"
 +++

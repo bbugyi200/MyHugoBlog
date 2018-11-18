@@ -1,5 +1,6 @@
 +++
 title = "Keeping a Log of Most Recently Edited Files"
+categories = ["vim"]
 date = 2018-11-16T02:59:49-05:00
 description = "Learn how you can keep a list of your most recently edited files and why this is SO useful."
 image = "https://bryanbugyi.com/images/vim-icon.jpg"
