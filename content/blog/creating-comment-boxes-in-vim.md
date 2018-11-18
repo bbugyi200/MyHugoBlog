@@ -128,6 +128,10 @@ the code above as an example of proper vimscript. In fact, if you spot an error
 or know of better practices that I should be following, **please let me know in
 the comments.**
 
+{{% notice note %}}
+I have hard-coded the comment characters for various languages at the top of the `MakeBox` function. If your language is not listed there, you will have to make sure to add it manually.
+{{% /notice %}}
+
 ## The Setup
 
 Just copy the code above into you `vimrc` file. I also have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
@@ -135,10 +139,6 @@ Just copy the code above into you `vimrc` file. I also have the following mappin
 {{< highlight Vim >}}
 nnoremap <Leader># :call MakeBox()<CR>
 {{< /highlight >}}
-
-{{% notice note %}}
-I have hard-coded the comment characters for various languages at the top of the `MakeBox` function. If your language is not listed there, you will have to make sure to add it manually.
-{{% /notice %}}
 
 ## The Demo
 
