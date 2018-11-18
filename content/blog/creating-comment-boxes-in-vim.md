@@ -11,7 +11,7 @@ in bash scripts to write comments about the script at the top.
 The reason they are generally considered a bad practice is that they are
 difficult to change and thus encourage stale documentation. I still
 advice that you don't use comment boxes in the real world since not everyone on your
-team will have read this amazing post :smile:. But for small scripts on my own
+team will have read this amazing post :laughing:. But for small scripts on my own
 system, I still use comment boxes, and you can too.
 
 ## The Code
@@ -92,6 +92,11 @@ function! s:BoxBar()
 endf
 {{< /highlight >}}
 
+Now, you should know that I'm new to the language so you probably shouldn't use
+the code above as an example of proper vimscript. In fact, if you spot an error
+or know of better practices that I should be following, **please let me know in
+the comments.**
+
 ## The Setup
 
 There are two variables you will need to adjust manually:
@@ -113,8 +118,3 @@ nnoremap <Leader># :call MakeBox()<CR>
 Here's a look at the `MakeBox` function in action:
 
 <img src="/images/MakeBox_Demo.gif" alt="Demonstration GIF for MakeBox Function"/>
-
-Now, you should know that I'm new to the language so you probably shouldn't use
-the code above as an example of proper vimscript. In fact, if you spot an error
-or know of better practices that I should be following, **please let me know in
-the comments.**
