@@ -151,6 +151,6 @@ Here's a look at the `MakeBox` function in action:
 
 ## CHANGELOG
 
-* Edited the source code of the `MakeBox` function in response to advice given by **statox42** in [this][vim-reddit] Reddit discussion.
+* Improved the source code of the `MakeBox` function in response to advice given by **statox42** in [this][vim-reddit] Reddit discussion.
 
 [vim-reddit]: https://www.reddit.com/r/vim/comments/9y5sel/vimscript_solution_for_maintaining_comment_boxes/
