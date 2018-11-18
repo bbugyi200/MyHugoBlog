@@ -4,8 +4,6 @@ date = 2018-11-18T01:34:35-05:00
 description = "Description and demonstration of the MakeBox vimscript function I use to help me maintain comment boxes."
 +++
 
-## Introduction
-
 Even though I know it's not normally considered a good practice, I still
 like to use comment boxes from time to time. These are especially handy
 in bash files to write comments about the script at the top.
@@ -108,7 +106,7 @@ Finally, I have the following mapping defined in my `vimrc` which you can use as
 nnoremap <Leader># :call MakeBox()<CR>
 {{< /highlight >}}
 
-## Demo
+## The Demo
 
 Here's a look at `MakeBox` in action:
 
