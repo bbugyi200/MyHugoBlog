@@ -47,7 +47,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{ .Site.Params.twitter }}">
     <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
-    <meta name="twitter:image" content="{{ .Image }}">
+    <meta name="twitter:image" content="{{ .Site.Params.image }}">
   {{ end }}
 
   <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
