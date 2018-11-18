@@ -58,10 +58,16 @@ function! MakeBox()
 
     normal! j
     let curr_line = getline('.')
+    let first_line = 1
     while curr_line[0:2] != triple_comment
+        if first_line == 1
+            let first_line = 0
+        else
+            normal! j
+        endif
+
         let curr_line = getline('.')
         call MakeBoxLine(max_line)
-        normal! j
     endw
 
     call MakeBoxBar(max_line)
