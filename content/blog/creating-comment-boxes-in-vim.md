@@ -47,21 +47,21 @@ function! MakeBox()
 
     let curr_line = getline('.')
     while curr_line[0:2] != triple_comment
-        execute "normal k"
+        normal! k
         let curr_line = getline('.')
     endw
 
-    execute "normal $"
+    normal! $
     let max_line = col('.')
 
     call MakeBoxBar(max_line)
 
-    execute "normal j"
+    normal! j
     let curr_line = getline('.')
     while curr_line[0:2] != triple_comment
         let curr_line = getline('.')
         call MakeBoxLine(max_line)
-        execute "normal j"
+        normal! j
     endw
 
     call MakeBoxBar(max_line)
@@ -75,7 +75,7 @@ function! MakeBoxBar(max_line)
     let _ = cursor(line('.'), a:max_line)
     let column_number = col('.')
     while column_number != a:max_line
-        execute "normal a" . g:comment_char
+        execute "normal! a" . g:comment_char
         let column_number = col('.')
     endw
 endf
@@ -84,23 +84,23 @@ endf
 " Format a single line inside of a comment box                                "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! MakeBoxLine(max_line)
-    execute "normal 0"
+    normal! 0
     let current_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
 
     if current_ch == ' ' || current_ch == ''
-        execute "normal xi" . g:comment_char . " "
+        execute "normal! xi" . g:comment_char . " "
     elseif current_ch != g:comment_char
-        execute "normal i" . g:comment_char . " "
+        execute "normal! i" . g:comment_char . " "
     endif
 
     let do_double = index(['/', '-'], g:comment_char) >= 0
 
     if do_double
-        execute "normal 0l"
+        normal! 0l
         let ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
         let column_number = col('.')
         if ch != g:comment_char
-            execute "normal i" . g:comment_char
+            execute "normal! i" . g:comment_char
         endif
     endif
 
@@ -109,18 +109,18 @@ function! MakeBoxLine(max_line)
     let current_ch = matchstr(getline('.'), '\%' . col('.') . 'c.')
     if column_number != 1 && (do_double != 1 || column_number != 2)
         if current_ch == g:comment_char || column_number == a:max_line
-            execute "normal D"
+            normal! D
             let column_number = col('.')
         endif
     endif
     while column_number < (a:max_line - 2)
         let column_number = col('.')
-        execute "normal a "
+        execute "normal! a "
     endwhile
-    execute "normal a" . g:comment_char
+    execute "normal! a" . g:comment_char
 
     if do_double
-        execute "normal hr" . g:comment_char
+        execute "normal! hr" . g:comment_char
     endif
 endfunction
 {{< /highlight >}}
@@ -146,4 +146,12 @@ nnoremap <Leader># :call MakeBox()<CR>
 
 Here's a look at the `MakeBox` function in action:
 
+<hr>
+
+## ChangeLog
+
+    * Edited the source code of the `MakeBox` function to adhere to a few of the best practices adviced by **statox42** in [this][vim-reddit] discussion.
+
 <img src="/images/MakeBox_Demo.gif" alt="Demonstration GIF for MakeBox Function"/>
+
+[vim-reddit]: https://www.reddit.com/r/vim/comments/9y5sel/vimscript_solution_for_maintaining_comment_boxes/
