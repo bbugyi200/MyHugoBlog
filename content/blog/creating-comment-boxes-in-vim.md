@@ -16,7 +16,7 @@ advice that you not use comment boxes in the real world since not everyone on yo
 team will have read this amazing post :smile:. But for small scripts on my own
 system, I still use comment boxes, and you can too.
 
-## MakeBox Code
+## The Code
 
 The following vimscript snippet defines the `MakeBox` function:
 
@@ -92,7 +92,7 @@ function! s:BoxBar()
 endf
 {{< /highlight >}}
 
-## How to use this in your vim setup?
+## The Setup
 
 There are two values you may need to adjust manually:
 
