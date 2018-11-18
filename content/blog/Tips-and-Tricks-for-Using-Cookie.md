@@ -2,7 +2,8 @@
 title = "cookie: Advanced Tips and Tricks"
 date = 2018-11-15T03:47:43Z
 draft = false
-image = "https://bryanbugyi.com/images/BB.jpeg"
+description="As far as time-saving applications go, cookie is quickly becoming one of my favorites. In this post, I provide a tutorial for some of cookie's more advanced features."
+image = "https://github.com/bbugyi200/cookie/blob/master/img/logo.png?raw=true"
 +++
 
 As far as time-saving applications go, [cookie] is quickly becoming one of my favorites. In case you haven't heard of cookie before, I'll start this post off by giving a quick micro-tutorial of the tool.
