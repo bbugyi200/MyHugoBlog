@@ -1,8 +1,7 @@
 +++
-title = "Creating Comment Boxes in Vim"
+title = "Comment Boxes. Bad Practice? Or just misunderstood?"
 date = 2018-11-18T01:34:35-05:00
-description = ""
-draft = true
+description = "Description and demonstration of the MakeBox vimscript function I use to help me maintain comment boxes."
 +++
 
 ## Introduction
