@@ -4,7 +4,7 @@ title = "A Tech Blog by Bryan Bugyi"
 newContentEditor = "vim"
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
-tags = ["portfolio", "web design", "blog"]
+tags = ["vim", "commandline"]
 config = "config.toml"
 theme = "osprey"
 canonifyURLS = true
@@ -15,7 +15,6 @@ disqusShortname = "bryanbugyi"
 [Params]
     tagline = """"Measuring programming progress by lines of code is like measuring aircraft building progress by weight." - Bill Gates"""
     author = "Bryan Bugyi"
-    tags = ["vim", "commandline"]
     description = "Software Engineer in training. Currently studying Computer Science and Mathematics at Rutgers University. I am on track to graduate in the Spring of 2018."
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
