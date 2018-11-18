@@ -10,11 +10,11 @@ Even though I know it's not normally considered a good practice, I still
 like to use comment boxes from time to time. These are especially handy
 in bash files to write comments about the script at the top.
 
-The reason they are a bad practice is that they are difficult to change
-and encourage stale documentation (because no one wants to change them).
-This post won't change that fact in the real world since not everyone on
-your team will have read this amazing post :). But for small scripts on
-my own system, I still use comment boxes, and you can too.
+The reason they are generally considered a bad practice is that they are
+difficult to change and thus encourage stale documentation. I still
+advice that you not use comment boxes in the real world since not everyone on your
+team will have read this amazing post :). But for small scripts on my own
+system, I still use comment boxes, and you can too.
 
 ## MakeBox Code
 
