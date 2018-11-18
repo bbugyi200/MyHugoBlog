@@ -124,7 +124,7 @@ the comments.**
 
 ## The Setup
 
-You first need to set the `g:comment_char` variable, which is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory. For example, I have the following line in `~/.vim/ftplugin/sh.vim`:
+You first need to set the `g:comment_char` variable, which is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory. For example, I have the following line in my `~/.vim/ftplugin/sh.vim` file:
 
 ``` bash
 let g:comment_char = '#'
