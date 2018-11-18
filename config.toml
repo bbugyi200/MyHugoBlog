@@ -8,6 +8,7 @@ tags = ["portfolio", "web design", "blog"]
 config = "config.toml"
 theme = "osprey"
 canonifyURLS = true
+image = "https://bryanbugyi.com/images/BB.jpeg"
 googleAnalytics = "UA-129349538-1"
 enableEmoji = true
 disqusShortname = "bryanbugyi"
