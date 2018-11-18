@@ -16,7 +16,7 @@ system, I still use comment boxes, and you can too.
 
 ## The Code
 
-The following vimscript snippet defines the `MakeBox` function:
+In the following code snippet, you'll find the definition of the `MakeBox` vimscript function:
 
 {{< highlight Vim >}}
 """""""""""""""""""""""""""""""""""""""""
