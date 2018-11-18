@@ -1,5 +1,6 @@
 +++
 title = "Vimscript Solution for Maintaining Comment Boxes"
+tags = ["vim"]
 date = 2018-11-18T01:34:35-05:00
 description = "Comment boxes are visually appealling but hard to maintain. In this post, I recommend a vimscript solution that makes comment boxes a viable option again."
 image = "https://bryanbugyi.com/images/comment-box.png"
