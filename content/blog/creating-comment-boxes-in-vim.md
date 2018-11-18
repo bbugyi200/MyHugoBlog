@@ -107,4 +107,4 @@ There are two values you may need to adjust manually:
 
 Here's a demo of `MakeBox` in action:
 
-<img src="/images/MakeBox.demo" alt="Demonstration GIF for MakeBox Function"/>
+<img src="/images/MakeBox.gif" alt="Demonstration GIF for MakeBox Function"/>
