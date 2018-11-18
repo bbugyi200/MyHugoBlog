@@ -2,8 +2,15 @@
 title = "Comment Boxes. Bad Practice? Or just misunderstood?"
 date = 2018-11-18T01:34:35-05:00
 description = "Comment boxes are visually appealling but hard to maintain. In this post, I recommend a vimscript solution that makes comment boxes a viable option again."
-image = "https://bryanbugyi.com/images/comment-box.png"
+image = "https://bryanbugyi.com/images/BB.jpeg"
 +++
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@bryanbugyi.com">
+<meta name="twitter:creator" content="@bryan_bugi">
+<meta name="twitter:title" content="Comment Boxes. Bad Practice? Or just misunderstood?">
+<meta name="twitter:description" content="Comment boxes are visually appealling but hard to maintain. In this post, I recommend a vimscript solution that makes comment boxes a viable option again.">
+<meta name="twitter:image" content="https://bryanbugyi.com/images/comment-box.png">
 
 Even though I know it's not normally considered a good practice, I still
 like to use comment boxes from time to time. These are especially handy
