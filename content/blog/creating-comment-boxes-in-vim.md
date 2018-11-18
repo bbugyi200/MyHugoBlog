@@ -150,7 +150,7 @@ Here's a look at the `MakeBox` function in action:
 
 ## ChangeLog
 
-    * Edited the source code of the `MakeBox` function to adhere to a few of the best practices adviced by **statox42** in [this][vim-reddit] discussion.
+* Edited the source code of the `MakeBox` function to adhere to a few of the best practices adviced by **statox42** in [this][vim-reddit] discussion.
 
 <img src="/images/MakeBox_Demo.gif" alt="Demonstration GIF for MakeBox Function"/>
 
