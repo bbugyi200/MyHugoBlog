@@ -18,10 +18,7 @@ my own system, I still use comment boxes, and you can too.
 
 ## MakeBox Code
 
-The vimscript snippet below defines the `MakeBox` function. Now, I'm new to
-the language so you probably shouldn't use this as an example of proper
-vimscript. In fact, if you spot an error or know of better practices that I should
-follow, **please let me know in the comments.**
+The vimscript snippet below defines the `MakeBox` function.
 
 {{< highlight Vim >}}
 """""""""""""""""""""""""""""""""""""""""
@@ -105,6 +102,11 @@ There are two values you may need to adjust manually:
 
 ## Demo
 
-Here's a demo of `MakeBox` in action:
+Here's a look at `MakeBox` in action:
 
 <img src="/images/MakeBox_Demo.gif" alt="Demonstration GIF for MakeBox Function"/>
+
+Now, you should know that I'm new to the language so you probably shouldn't use
+the code above as an example of proper vimscript. In fact, if you spot an error
+or know of better practices that I should be following, **please let me know in
+the comments.**
