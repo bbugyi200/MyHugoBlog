@@ -100,7 +100,7 @@ There are two variables you will need to adjust manually:
 
 * The `g:comment_char` variable defines the comment character of the language you are using.
 
-The `g:comment_char` variable is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory (see `:h ftplugin` in vim for more information). The rest of the code can simply be copied into your `vimrc` file.
+The `g:comment_char` variable is specific to the programming language you are using. It should be placed in a file named `FILETYPE.vim` (where `FILETYPE` is the filetype used for the language) inside the `ftplugin` directory (run `:h ftplugin` in vim for more information). The rest of the code can be copied directly into your `vimrc` file.
 
 Finally, I have the following mapping defined in my `vimrc` which you can use as is or customize to your liking (or just call `MakeBox` directly): 
 
