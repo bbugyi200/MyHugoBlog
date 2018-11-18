@@ -12,7 +12,7 @@ That's the short version. For the full story, checkout cookie's [homepage][cooki
 
 ![demo]
 
-## <a name="envvars" style="border-bottom:0px;">Template Variables Inherit from your System's Environment Variables</a>
+## <a name="envvars" style="border-bottom:none;">Template Variables Inherit from your System's Environment Variables</a>
 
 Cookie is all about speed and convenience. But there is nothing convenient about manually typing out a half-dozen variable values every time you initialize a new script. Thankfully, there's another way. Before prompting the user to manually specify variable values on the command-line, cookie will check the currently defined environment variables. There are two ways to take advantage of this:
 
