@@ -22,7 +22,7 @@ in any language.
 
 {{< highlight Vim >}}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Close opening and closings of comment box.                                  "
+" Close comment box.                                                          "
 "                                                                             "
 " Beginning comment bar and ending comment bar must both be defined already   "
 " and the cursor needs to be between the bars when 'MakeBox' is called.       "
