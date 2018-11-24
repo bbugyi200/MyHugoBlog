@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"Good design adds value faster than it adds cost." - Thomas C. Gale"""
+    tagline = """"Languages shape the way we think, or don't." - Erik Naggum"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
