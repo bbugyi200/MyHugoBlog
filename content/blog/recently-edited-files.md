@@ -58,7 +58,7 @@ There are two applications that I have thought of so far, though I'm sure there 
 I have the following one-liner in my `zshrc` config:
 
 ``` bash
-rim() { vim "$(awk -F'/' "/[^/]*$1[^/]*$/ {printf \"%s\\n\", \$0}" "${RECENTLY_EDITED_FILES_LOG}" | tail -n 1)"; }
+rim() { vim "$(awk -F'/' "/[^/]*$1[^/]*$/ {printf \"%s\n\", \$0}" "${RECENTLY_EDITED_FILES_LOG}" | tail -n 1)"; }
 ```
 
 Now when I run `rim <EXPR>`, the most recently edited file whose filename matches `<EXPR>` will be opened up in vim.
