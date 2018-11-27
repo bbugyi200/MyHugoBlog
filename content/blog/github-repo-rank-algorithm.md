@@ -67,7 +67,7 @@ Since I cannot figure out for the life of me how to embed hyperlinks in the [Cha
 * [Pytest](https://github.com/pytest-dev/pytest)
 * [Qutebrowser](https://github.com/qutebrowser/qutebrowser)
 * [XMonad](https://github.com/xmonad/xmonad)
-* [CookieCutter](https://github.com/audreyr/cookiecutter)
+* [Cookiecutter](https://github.com/audreyr/cookiecutter)
 * [Khal](https://github.com/pimutils/khal)
 
 
