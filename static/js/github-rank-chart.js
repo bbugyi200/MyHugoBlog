@@ -33,7 +33,7 @@ var myChart = new Chart(ctx, {
             xAxes: [{
                 scaleLabel: {
                     display: true,
-                    font: 15,
+                    font: 25,
                     labelString: 'GitHub Repository'
                 },
 				ticks: {
@@ -43,7 +43,7 @@ var myChart = new Chart(ctx, {
 			yAxes: [{
                 scaleLabel: {
                     display: true,
-                    font: 15,
+                    font: 25,
                     labelString: 'Rank'
                 },
 				ticks: {
