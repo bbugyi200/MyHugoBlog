@@ -25,16 +25,16 @@ Keeping these two assumptions in mind, I propose the following algorithm:
 if ★ < 50:
     bonus=0.0
     multiplier=1.0
-elif 50 <= ★ < 100:
+else if 50 <= ★ < 100:
     bonus=0.5
     multiplier=1.5
-elif 100 <= ★ < 1000:
+else if 100 <= ★ < 1000:
     bonus=1.0
     multiplier=3.0
-elif 1000 <= ★ < 10000:
+else if 1000 <= ★ < 10000:
     bonus=1.5
     multiplier=3.5
-elif 10000 <= ★:
+else if 10000 <= ★:
     bonus=2.0
     multiplier=3.0
 
