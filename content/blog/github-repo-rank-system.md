@@ -3,6 +3,7 @@ title = "A New GitHub Repository Rank Algorithm"
 date = 2018-11-26T22:21:58-05:00
 description = "GitHub stars have long been an insufficient means of determining a repository's worth. It's time for a new ranking system."
 image = "https://bryanbugyi.com/images/github-rank-system.png"
+draft = true
 +++
 
 Every budding Software Engineer longs for the day that one of their GitHub projects hits 100 stars. I am proud to say that I recently hit this coveted milestone (checkout [funky]). I have [this][HN] Hacker News post---which went viral for about 24 hours)---to thank for that.
