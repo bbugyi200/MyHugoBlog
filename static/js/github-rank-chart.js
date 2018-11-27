@@ -5,7 +5,7 @@ var myChart = new Chart(ctx, {
 	data: {
 		datasets: [{
 			label: '',
-			data: [
+			dataPoints: [
                 { label: "TensorFlow", y: 5.00, link: "" },
                 { label: "Django", y: 4.59, link: "" },
                 { label: "Flask", y: 3.74, link: "" },
