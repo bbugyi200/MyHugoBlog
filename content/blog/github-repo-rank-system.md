@@ -54,7 +54,7 @@ Many of these are projects that I use myself, and I agree with the ranks (for th
 
 ### GitHub Project Reference Links
 
-Since I cannot figure out for the life of me how to embed hyperlinks in the [chart.js] bar chart above, here is a list of hyperlinks corresponding to GitHub projects referenced above:
+Since I cannot figure out for the life of me how to embed hyperlinks in the [chart.js] bar chart above, here is a list of hyperlinks corresponding to GitHub projects referenced above :weary::
 
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
 * [Django]()
