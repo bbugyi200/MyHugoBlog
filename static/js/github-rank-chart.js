@@ -25,7 +25,17 @@ var myChart = new Chart(ctx, {
             display: false
         },
 		scales: {
+            xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'GitHub Repository'
+                }
+            }]
 			yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Rank'
+                }
 				ticks: {
 					beginAtZero:true
 				}
