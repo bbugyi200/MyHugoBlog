@@ -24,29 +24,72 @@ Keeping these two assumptions in mind, I propose the following algorithm:
 
 ```
 if ★ < 50:
-    bonus=0
-    multiplier=3.0
+    bonus=0.0
+    multiplier=1.0
 elif 50 <= ★ < 100:
     bonus=0.5
     multiplier=1.5
 elif 100 <= ★ < 1000:
-    bonus=1
-    multiplier=3
+    bonus=1.0
+    multiplier=3.0
 elif 1000 <= ★ < 10000:
     bonus=1.5
     multiplier=3.5
 elif 10000 <= ★:
-    bonus=2
-    multiplier=3
+    bonus=2.0
+    multiplier=3.0
 
-rank = (multiplier × min{2×FORKS/STARS, 1}) + bonus
+rank = (multiplier × min{2 × ⑂ / ★, 1}) + bonus
 ```
 
+where ★ is the total number of stars and ⑂ is the total number of forks.
+
+{{% notice note %}}
+This algorithm is admittedly not very well thought out. It is only meant to serve as a motivational example of what could be.
+{{% /notice %}}
+
 ## Sample Scores for Select GitHub Repos
-
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
 ## Rank your GitHub Projects
-
-## Other Possible Scoring Methods
 
 ## Can you do better?
 
