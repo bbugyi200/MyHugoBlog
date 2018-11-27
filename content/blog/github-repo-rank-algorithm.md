@@ -5,7 +5,7 @@ description = "GitHub stars have long been an insufficient means of determining 
 image = "https://bryanbugyi.com/images/github-rank-system.png"
 +++
 
-Every budding Software Engineer longs for the day that one of their GitHub projects hits 100 stars. I am proud to say that I recently hit this coveted milestone. I have [this][HN] Hacker News post---which went viral for about 24 hours)---to thank for that.
+Every budding Software Engineer longs for the day that one of their GitHub projects hits 100 stars. I am proud to say that I recently hit this coveted milestone. I have [this][HN] Hacker News post---which went viral for about 24 hours---to thank for that.
 
 At the time of this writing, [funky] has 317 stars on GitHub. But, with that said, I imagine that only a small percentage of the users who starred the project have actually continued to use it. In fact, I'm fairly confident that the project has been overcompensated (with stars) considering how much actual use it has seen from the developer community.
 
