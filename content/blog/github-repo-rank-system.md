@@ -56,7 +56,7 @@ Many of these are projects that I use myself, and I agree with the ranks (for th
 
 The rank algorithm presented in this article is admittedly not very well thought out. It is only meant to serve as a motivational example of what could be.
 
-Do you have a better idea? Share it in the comments.
+Do you have a better idea? Share it in the comments!
 
 
 [funky]: https://github.com/bbugyi200/funky
