@@ -18,6 +18,7 @@ TLDR: **GitHub stars have long been an insufficient means of determining a repos
 In this section, I provide an example of an algorithm that I believe provides a better metric for how *useful* a GitHub project is to the developer community. From this point forward we shall refer to the idea of a GitHub repository's *worth* or *usefulness to the developer community* as the repository's **rank**. The rank algorithm is based on a simple pair of assumptions:
 
 1) GitHub stars are unreliable for determining the repository rank, but are a good indicator of the amount of long-term traffic that the repository has seen.
+
 2) GitHub forks represent a form of active *engagement* with the repository and are thus a more valuable metric for determining repository rank.
 
 Keeping these two assumptions in mind, I propose the following algorithm:
