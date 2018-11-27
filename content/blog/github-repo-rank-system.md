@@ -38,7 +38,7 @@ elif 10000 <= ★:
     bonus=2
     multiplier=3
 
-rank = (multiplier × min{2 × FORKS / STARS, 1}) + bonus
+rank = (multiplier × min{2×FORKS/STARS, 1}) + bonus
 ```
 
 ## Sample Scores for Select GitHub Repos
