@@ -51,7 +51,7 @@ To illustrate the rank algorithm above, I have used it to calculate the ranks of
 
 I have used most of these projects myself and---based on each project's available support and overall presence on the web---agree with the ranks (for the most part) output by this algorithm.
 
-(Please let me know in the comments if you disagree with any of these rankings.)
+(Let me know in the comments if you disagree with any of these rankings.)
 
 <canvas id='myChart' width='400' height='400'></canvas>
 <script src="js/github-rank-chart.js"></script>
