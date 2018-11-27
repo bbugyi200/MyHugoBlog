@@ -7,7 +7,9 @@ image = "https://bryanbugyi.com/images/github-rank-system.png"
 
 Every budding Software Engineer longs for the day that one of their GitHub projects hits 100 stars. I am proud to say that I recently hit this coveted milestone (checkout [funky]). I have [this][HN] Hacker News post---which went viral for about 24 hours)---to thank for that.
 
-At the time of this writing, [funky] has 317 stars on GitHub. With that said, I imagine that only a small percentage of the users who starred the project have actually continued to use it. In fact, I'm fairly confident that the project has been overcompensated (with stars) considering how much actual use it has seen from the developer community. Alas, I have come to a bitter conclusion regarding GitHub projects: *Stars != Usefulness*. This realization has led me on a search for a better way.
+At the time of this writing, [funky] has 317 stars on GitHub. With that said, I imagine that only a small percentage of the users who starred the project have actually continued to use it. In fact, I'm fairly confident that the project has been overcompensated (with stars) considering how much actual use it has seen from the developer community.
+
+Alas, I have come to a bitter conclusion regarding GitHub projects: **High Number of Stars != High Value**. This realization has led me on a search for a better way.
 
 TLDR: **GitHub stars have long been an insufficient means of determining a repository's worth. It's time for a new ranking system.**
 
