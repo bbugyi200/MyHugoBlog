@@ -51,7 +51,7 @@ This algorithm is admittedly not very well thought out. It is only meant to serv
 
 To illustrate the rank algorithm above, I have used it to calculate the ranks of a few select GitHub projects.
 
-Many of these are projects that I use myself, and I agree with (for the most part) the ranks output by this algorithm based on each project's support and overall presence on the web.
+Many of these are projects that I use myself, and I agree with the ranks (for the most part) output by this algorithm based on each project's support and overall presence on the web.
 
 <canvas id='myChart' width='400' height='400'></canvas>
 <script src="js/github-rank-chart.js"></script>
