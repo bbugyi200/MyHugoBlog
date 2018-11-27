@@ -30,7 +30,7 @@ var myChart = new Chart(ctx, {
                     display: true,
                     labelString: 'GitHub Repository'
                 }
-            }]
+            }],
 			yAxes: [{
                 scaleLabel: {
                     display: true,
