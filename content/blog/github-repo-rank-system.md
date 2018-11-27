@@ -1,5 +1,5 @@
 +++
-title = "A New GitHub Repository Rank Algorithm"
+title = "A New GitHub Rank Algorithm"
 date = 2018-11-26T22:21:58-05:00
 description = "GitHub stars have long been an insufficient means of determining a repository's worth. It's time for a new ranking system."
 image = "https://bryanbugyi.com/images/github-rank-system.png"
