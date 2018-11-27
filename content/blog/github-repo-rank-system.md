@@ -57,14 +57,14 @@ Many of these are projects that I use myself, and I agree with the ranks (for th
 Since I cannot figure out for the life of me how to embed hyperlinks in the [chart.js] bar chart above, here is a list of hyperlinks corresponding to GitHub projects referenced above :weary::
 
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
-* [Django]()
-* [Flask]()
-* [Atom]()
-* [Pytest]()
-* [Qutebrowser]()
-* [XMonad]()
-* [CookieCutter]()
-* [Khal]()
+* [Django](https://github.com/django/django)
+* [Flask](https://github.com/pallets/flask)
+* [Atom](https://github.com/atom/atom)
+* [Pytest](https://github.com/pytest-dev/pytest)
+* [Qutebrowser](https://github.com/qutebrowser/qutebrowser)
+* [XMonad](https://github.com/xmonad/xmonad)
+* [CookieCutter](https://github.com/audreyr/cookiecutter)
+* [Khal](https://github.com/pimutils/khal)
 
 
 ## Can you do better?
