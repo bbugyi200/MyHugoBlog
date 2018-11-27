@@ -47,7 +47,7 @@ where ★ is the total number of stars and ⑂ is the total number of forks.
 This algorithm is admittedly not very well thought out. It is only meant to serve as a motivational example of what could be.
 {{% /notice %}}
 
-## Sample Scores for Select GitHub Repos
+## Chart of Select GitHub Repository Ranks
 
 <canvas id='myChart' width='400' height='400'></canvas>
 <script src="js/github-rank-chart.js"></script>
