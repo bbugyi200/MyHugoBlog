@@ -13,7 +13,7 @@ TLDR: **GitHub stars have long been an insufficient means of determining a repos
 
 ## New GitHub Rank Algorithm
 
-In this section, I provide an example of an algorithm that I believe provides a better metric for how *useful* a GitHub project is to the developer community. From this point forward we shall refer to the idea of a GitHub repositories *worth* or *usefulness to the developer community* as the repositories **rank**. The rank algorithm is based on a simple pair of assumptions:
+In this section, I provide an example of an algorithm that I believe provides a better metric for how *useful* a GitHub project is to the developer community. From this point forward we shall refer to the idea of a GitHub repository's *worth* or *usefulness to the developer community* as the repository's **rank**. The rank algorithm is based on a simple pair of assumptions:
 
 1) GitHub stars are unreliable for determining the repository rank, but are a good indicator of the amount of long-term traffic that the repository has seen.
 
