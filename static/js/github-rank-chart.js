@@ -4,6 +4,8 @@ var myChart = new Chart(ctx, {
 	data: [
         {
             type: 'bar',
+            cursor: 'pointer',
+            click: onClick,
             dataPoints: [
                 { label: "TensorFlow", y: 5.00, link: "" },
                 { label: "Django", y: 4.59, link: "" },
