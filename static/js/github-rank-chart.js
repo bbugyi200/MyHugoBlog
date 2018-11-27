@@ -1,4 +1,5 @@
 var ctx = document.getElementById('myChart').getContext('2d');
+var axFontSize = 17;
 var myChart = new Chart(ctx, {
 	type: 'bar',
 	data: {
@@ -33,7 +34,7 @@ var myChart = new Chart(ctx, {
             xAxes: [{
                 scaleLabel: {
                     display: true,
-                    fontSize: 15,
+                    fontSize: axFontSize,
                     labelString: 'GitHub Repository'
                 },
 				ticks: {
@@ -43,7 +44,7 @@ var myChart = new Chart(ctx, {
 			yAxes: [{
                 scaleLabel: {
                     display: true,
-                    fontSize: 15,
+                    fontSize: axFontSize,
                     labelString: 'Rank'
                 },
 				ticks: {
