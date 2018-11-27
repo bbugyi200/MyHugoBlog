@@ -2,10 +2,10 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
 	type: 'bar',
 	data: {
-		labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+		labels: ['TensorFlow', 'Django', 'Flask', 'Atom', 'pytest', 'qutebrowser', 'xmonad', 'cookiecutter', 'khal'],
 		datasets: [{
 			label: '# of Votes',
-			data: [12, 19, 3, 5, 2, 3],
+			data: [5.00, 4.59, 3.74, 3.33, 3.30, 2.49, 2.47, 2.26, 2.12],
 			backgroundColor: [
 'rgba(255, 99, 132, 0.2)',
 'rgba(54, 162, 235, 0.2)',
