@@ -54,7 +54,7 @@ Many of these are projects that I use myself, and I agree with the ranks (for th
 
 ### GitHub Project Reference Links
 
-Since I cannot figure out for the life of me how to embed hyperlinks in the [chart.js] bar chart above, here is a list of hyperlinks corresponding to GitHub projects referenced above :weary::
+Since I cannot figure out for the life of me how to embed hyperlinks in the [Chart.js] bar chart above, here is a list of hyperlinks corresponding to GitHub projects referenced above :weary::
 
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
 * [Django](https://github.com/django/django)
@@ -76,4 +76,4 @@ Do you have a better idea? Share it in the comments!
 
 [funky]: https://github.com/bbugyi200/funky
 [HN]: https://news.ycombinator.com/item?id=18486191
-[chart.js]: https://www.chartjs.org/
+[Chart.js]: https://www.chartjs.org/
