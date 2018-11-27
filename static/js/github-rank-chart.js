@@ -29,13 +29,16 @@ var myChart = new Chart(ctx, {
                 scaleLabel: {
                     display: true,
                     labelString: 'GitHub Repository'
-                }
+                },
+				ticks: {
+					beginAtZero:true
+				}
             }],
 			yAxes: [{
                 scaleLabel: {
                     display: true,
                     labelString: 'Rank'
-                }
+                },
 				ticks: {
 					beginAtZero:true
 				}
