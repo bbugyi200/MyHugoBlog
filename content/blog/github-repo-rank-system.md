@@ -49,7 +49,7 @@ This algorithm is admittedly not very well thought out. It is only meant to serv
 
 ## Sample Rank Calculations
 
-To illustrate the rank algorithm above, I have used it to calculate the ranks of a few select GitHub projects. Many of these are projects that I use myself. I agree with the ranks output by this algorithm based on each project's support and overall presence on the web. If you disagree, **please let me know in the comments**.
+To illustrate the rank algorithm above, I have used it to calculate the ranks of a few select GitHub projects. Many of these are projects that I use myself. I agree with the ranks output by this algorithm based on each project's support and overall presence on the web.
 
 <canvas id='myChart' width='400' height='400'></canvas>
 <script src="js/github-rank-chart.js"></script>
