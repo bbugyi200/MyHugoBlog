@@ -56,7 +56,7 @@ Many of these are projects that I use myself, and I agree with the ranks (for th
 <canvas id='myChart' width='400' height='400'></canvas>
 <script src="js/github-rank-chart.js"></script>
 
-## Rank your GitHub Projects
+## Calculate the Rank of your Own Projects
 
 ## Can you do better?
 
