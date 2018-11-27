@@ -49,13 +49,13 @@ This algorithm is admittedly not very well thought out. It is only meant to serv
 
 ## Sample Scores for Select GitHub Repos
 
-{{ `<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id='myChart' width='400' height='400'></canvas>
 <script>
-        var ctx = document.getElementById("myChart").getContext('2d');
+        var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
 type: 'bar',
 data: {
-labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
 datasets: [{
 label: '# of Votes',
 data: [12, 19, 3, 5, 2, 3],
@@ -88,7 +88,7 @@ beginAtZero:true
         }
          }
 });
-</script>` | safeJS }}
+</script>
 
 ## Rank your GitHub Projects
 
