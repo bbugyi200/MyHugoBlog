@@ -48,6 +48,7 @@ This algorithm is admittedly not very well thought out. It is only meant to serv
 {{% /notice %}}
 
 ## Sample Scores for Select GitHub Repos
+
 {{ `<canvas id="myChart" width="400" height="400"></canvas>
 <script>
         var ctx = document.getElementById("myChart").getContext('2d');
@@ -88,6 +89,7 @@ beginAtZero:true
          }
 });
 </script>` | safeJS }}
+
 ## Rank your GitHub Projects
 
 ## Can you do better?
