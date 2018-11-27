@@ -52,6 +52,21 @@ Many of these are projects that I use myself, and I agree with the ranks (for th
 <canvas id='myChart' width='400' height='400'></canvas>
 <script src="js/github-rank-chart.js"></script>
 
+### GitHub Project Reference Links
+
+Since I cannot figure out for the life of me how to embed hyperlinks in the [chart.js] bar chart above, here is a list of hyperlinks corresponding to GitHub projects referenced above:
+
+* [TensorFlow]()
+* [Django]()
+* [Flask]()
+* [Atom]()
+* [Pytest]()
+* [Qutebrowser]()
+* [XMonad]()
+* [CookieCutter]()
+* [Khal]()
+
+
 ## Can you do better?
 
 The rank algorithm presented in this article is admittedly not very well thought out. It is only meant to serve as a motivational example of what could be.
@@ -61,3 +76,4 @@ Do you have a better idea? Share it in the comments!
 
 [funky]: https://github.com/bbugyi200/funky
 [HN]: https://news.ycombinator.com/item?id=18486191
+[chart.js]: https://www.chartjs.org/
