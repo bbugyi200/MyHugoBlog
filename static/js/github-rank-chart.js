@@ -34,38 +34,6 @@ var myChart = new Chart(ctx, {
             }]
         }
     ],
-	options: {
-        title: {
-            fontSize: 25,
-            display: true,
-            text: "GitHub Project vs Rank"
-        },
-        legend: {
-            display: false
-        },
-		scales: {
-            xAxes: [{
-                scaleLabel: {
-                    display: true,
-                    fontSize: axFontSize,
-                    labelString: 'GitHub Project'
-                },
-				ticks: {
-					beginAtZero:true
-				}
-            }],
-			yAxes: [{
-                scaleLabel: {
-                    display: true,
-                    fontSize: axFontSize,
-                    labelString: 'Rank'
-                },
-				ticks: {
-					beginAtZero:true
-				}
-			}]
-		}
-	}
 });
 
 function onClick(e){ 
