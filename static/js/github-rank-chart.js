@@ -1,9 +1,9 @@
 var ctx = document.getElementById('myChart').getContext('2d');
 var axFontSize = 17;
 var myChart = new Chart(ctx, {
-	type: 'bar',
 	data: [
         {
+            type: 'bar',
             dataPoints: [
                 { label: "TensorFlow", y: 5.00, link: "" },
                 { label: "Django", y: 4.59, link: "" },
