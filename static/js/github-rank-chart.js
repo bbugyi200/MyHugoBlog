@@ -1,25 +1,13 @@
 var ctx = document.getElementById('myChart').getContext('2d');
 var axFontSize = 17;
 var myChart = new Chart(ctx, {
-	data: [
-        {
-            type: 'bar',
-            cursor: 'pointer',
-            click: onClick,
-            dataPoints: [
-                { label: "TensorFlow", y: 5.00, link: "" },
-                { label: "Django", y: 4.59, link: "" },
-                { label: "Flask", y: 3.74, link: "" },
-                { label: "Atom", y: 3.33, link: "" },
-                { label: "Pytest", y: 3.30, link: "" },
-                { label: "Qutebrowser", y: 2.49, link: "" },
-                { label: "XMonad", y: 2.47, link: "" },
-                { label: "Cookiecutter", y: 2.26, link: "" },
-                { label: "Khal", y: 2.12, link: "" }
-            ],
-            datasets: [{
-                label: '',
-                backgroundColor: [
+	type: 'bar',
+	data: {
+		labels: ['TensorFlow', 'Django', 'Flask', 'Atom', 'Pytest', 'Qutebrowser', 'XMonad', 'Cookiecutter', 'Khal'],
+		datasets: [{
+			label: '',
+			data: [5.00, 4.59, 3.74, 3.33, 3.30, 2.49, 2.47, 2.26, 2.12],
+			backgroundColor: [
 'rgba(255, 99, 132, 0.2)',
 'rgba(54, 162, 235, 0.2)',
 'rgba(255, 206, 86, 0.2)',
@@ -29,13 +17,40 @@ var myChart = new Chart(ctx, {
 'rgba(255, 99, 132, 0.2)',
 'rgba(54, 162, 235, 0.2)',
 'rgba(255, 206, 86, 0.2)'
-                ],
-                borderWidth: 1
-            }]
-        }
-    ],
+			],
+			borderWidth: 1
+		}]
+	},
+	options: {
+        title: {
+            fontSize: 25,
+            display: true,
+            text: "GitHub Project vs Rank"
+        },
+        legend: {
+            display: false
+        },
+		scales: {
+            xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    fontSize: axFontSize,
+                    labelString: 'GitHub Project'
+                },
+				ticks: {
+					beginAtZero:true
+				}
+            }],
+			yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    fontSize: axFontSize,
+                    labelString: 'Rank'
+                },
+				ticks: {
+					beginAtZero:true
+				}
+			}]
+		}
+	}
 });
-
-function onClick(e){ 
-        window.open(e.dataPoint.link,'_blank');  
-};
