@@ -11,7 +11,7 @@ At the time of this writing, [funky] has 317 stars on GitHub. But, with that sai
 
 Alas, I have come to a bitter conclusion regarding GitHub projects: a larger number of GitHub stars does NOT indicate a larger value added to the developer community (which IMHO should be the ultimate goal of any open source project). This realization has led me on a search for a better way.
 
-TLDR: **GitHub stars have long been an insufficient means of determining a repository's worth. It's time for a new ranking system.**
+tl;dr: **GitHub stars have long been an insufficient means of determining a repository's worth. It's time for a new ranking system.**
 
 ## The Rank Algorithm
 
