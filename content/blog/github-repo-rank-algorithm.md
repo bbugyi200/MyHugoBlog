@@ -13,7 +13,7 @@ Alas, I have come to a bitter conclusion regarding GitHub projects: a larger num
 
 TLDR: **GitHub stars have long been an insufficient means of determining a repository's worth. It's time for a new ranking system.**
 
-## New GitHub Rank Algorithm
+## The Rank Algorithm
 
 In this section, I provide an example of an algorithm that I believe provides a better metric for how *useful* a GitHub project is to the developer community. From this point forward we shall refer to the idea of a GitHub repository's *worth* or *usefulness to the developer community* as the repository's **rank**. The rank algorithm is based on a simple pair of assumptions:
 
@@ -49,7 +49,7 @@ where ★ is the total number of stars and ⑂ is the total number of forks. Thi
 
 To illustrate the rank algorithm above, I have used it to calculate the ranks of a few select GitHub projects.
 
-I have used most of these projects myself and agree with the ranks (for the most part) output by this algorithm---based on each project's available support and overall presence on the web.
+I have used most of these projects myself and---based on each project's available support and overall presence on the web---agree with the ranks (for the most part) output by this algorithm.
 
 (Let me know in the comments if you disagree with any of these rankings.)
 
