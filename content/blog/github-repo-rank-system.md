@@ -43,10 +43,6 @@ rank = (multiplier × min{2 × ⑂ / ★, 1}) + bonus
 
 where ★ is the total number of stars and ⑂ is the total number of forks.
 
-{{% notice note %}}
-This algorithm is admittedly not very well thought out. It is only meant to serve as a motivational example of what could be.
-{{% /notice %}}
-
 ## Sample Rank Calculations
 
 To illustrate the rank algorithm above, I have used it to calculate the ranks of a few select GitHub projects.
@@ -56,9 +52,12 @@ Many of these are projects that I use myself, and I agree with the ranks (for th
 <canvas id='myChart' width='400' height='400'></canvas>
 <script src="js/github-rank-chart.js"></script>
 
-## Calculate the Rank of your Own Projects
-
 ## Can you do better?
+
+The rank algorithm presented in this article is admittedly not very well thought out. It is only meant to serve as a motivational example of what could be.
+
+Do you have a better idea? Share it in the comments.
+
 
 [funky]: https://github.com/bbugyi200/funky
 [HN]: https://news.ycombinator.com/item?id=18486191
