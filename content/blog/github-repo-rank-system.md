@@ -41,7 +41,7 @@ else if 10000 <= ★:
 rank = (multiplier × min{2 × ⑂ / ★, 1}) + bonus
 ```
 
-where ★ is the total number of stars and ⑂ is the total number of forks.
+where ★ is the total number of stars and ⑂ is the total number of forks. This algorithm produces a numerical rank value between 0 and 5.
 
 ## Sample Rank Calculations
 
