@@ -49,7 +49,7 @@ where ★ is the total number of stars and ⑂ is the total number of forks. Thi
 
 To illustrate the rank algorithm above, I have used it to calculate the ranks of a few select GitHub projects.
 
-Many of these are projects that I have used myself, and I agree with the ranks (for the most part) output by this algorithm---based on each project's available support and overall presence on the web.
+I have used most of these projects myself and agree with the ranks (for the most part) output by this algorithm---based on each project's available support and overall presence on the web.
 
 <canvas id='myChart' width='400' height='400'></canvas>
 <script src="js/github-rank-chart.js"></script>
