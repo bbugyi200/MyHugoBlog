@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"There is nothing more unproductive than to build something efficiently that should not have been built at all." - Milt Bryce"""
+    tagline = """“To iterate is human, to recurse divine.” - L. Peter Deutsch"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
