@@ -31,6 +31,9 @@ not `/* ... */`).
 " and the cursor needs to be between the bars when 'MakeBox' is called.       "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! MakeBox()
+    " Mark starting position
+    normal! mm
+
     if index(['sh', 'python', 'ruby'], &ft) >= 0
         let g:comment_char = '#'
     elseif index(['c', 'cpp', 'java', 'javascript', 'php'], &ft) >= 0
@@ -39,6 +42,8 @@ function! MakeBox()
         let g:comment_char = '-'
     elseif index(['tex'], &ft) >= 0
         let g:comment_char = '%'
+    elseif index(['scheme'], &ft) >= 0
+        let g:comment_char = ';'
     elseif index(['vim'], &ft) >= 0
         let g:comment_char = '"'
     endif
@@ -71,6 +76,9 @@ function! MakeBox()
     endw
 
     call MakeBoxBar(max_line)
+
+    " Return cursor to starting position
+    normal! `mh
 endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
