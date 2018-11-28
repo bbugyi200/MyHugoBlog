@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"Write shy code - modules that don't reveal anything unnecessary to other modules and that don't rely on other modules' implementations." - Dave Thomas"""
+    tagline = """"One of the best programming skills you can have is knowing when to walk away for awhile." - Oscar Godson"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
