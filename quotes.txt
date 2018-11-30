@@ -8,10 +8,10 @@
 “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler
 "Write shy code - modules that don't reveal anything unnecessary to other modules and that don't rely on other modules' implementations." - Dave Thomas
 "One of my most productive days was throwing away 1000 lines of code." - Ken Thompson
-"You can have the project: Done On Time. Done On Budget. Done Properly - Pick two."
+"You can have the project: Done On Time. Done On Budget. Done Properly - Pick two." - Anonymous
 “Before software can be reusable it first has to be usable.” – Ralph Johnson
-"The best thing about a boolean is even if you are wrong, you are only off by a bit."
-"Programming is like pinball. The reward for doing it is the opportunity of doing it again."
+"The best thing about a boolean is even if you are wrong, you are only off by a bit." - Anonymous
+"Programming is like pinball. The reward for doing it is the opportunity of doing it again." - Anonymous
 "There is nothing more unproductive than to build something efficiently that should not have been built at all." - Milt Bryce
 "Measuring programming progress by lines of code is like measuring aircraft building progress by weight." - Bill Gates
 "In programming, the hard part isn't solving problems, but deciding what problems to solve." - Paul Graham
@@ -22,4 +22,4 @@
 "Good design adds value faster than it adds cost." - Thomas C. Gale
 “I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing.” - Oktal
 "They don't make bugs like Bunny anymore." - Olav Mjelde.
-"A good programmer is someone who always looks both ways before crossing a one-way street."
+"A good programmer is someone who always looks both ways before crossing a one-way street." - Anonymous
