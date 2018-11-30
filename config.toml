@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """\"In order to understand recursion, one must first understand recursion.\""""
+    tagline = """"One of the best programming skills you can have is knowing when to walk away for awhile." - Oscar Godson"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
