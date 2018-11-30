@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"Programming is like pinball. The reward for doing it is the opportunity of doing it again." - Anonymous"""
+    tagline = """"A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want."- Niklaus Wirth"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
