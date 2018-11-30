@@ -21,7 +21,6 @@
 "Good design adds value faster than it adds cost." - Thomas C. Gale
 “I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing.” - Oktal
 "They don't make bugs like Bunny anymore." - Olav Mjelde.
-\\"A good programmer is someone who always looks both ways before crossing a one-way street.\\"
 "A good programmer is someone who always looks both ways before crossing a one-way street." - Doug Linder
 \\"In order to understand recursion, one must first understand recursion.\\"
 \\"C++, where friends have access to your private members.\\"
