@@ -4,6 +4,7 @@ date = 2018-11-29T12:20:19-05:00
 description = ""
 categories = ["vim"]
 image = "https://bryanbugyi.com/images/BB.jpeg"
+draft = true
 +++
 
 First off, let me explain what I mean when I say *hack*. When selecting which hacks (e.g. tips, tricks, whatever) to include in this article, I really only held myself accountable for one rule: **each hack must be original**. As in no plugins, no tips and tricks from the [Vim Wiki][vimwiki], and no hijacked StackOverflow answers. So, at the very least, it is unlikely that you have seen any of these tricks before.
