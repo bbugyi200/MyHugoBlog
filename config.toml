@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"We build our computer (systems) the way we build our cities: over time, without a plan, on top of ruins." - Ellen Ullman"""
+    tagline = """"Programming is being ten minutes away from being done for the rest of your life." - Jon Maddox"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
