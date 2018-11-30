@@ -8,7 +8,6 @@
 “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler
 "Write shy code - modules that don't reveal anything unnecessary to other modules and that don't rely on other modules' implementations." - Dave Thomas
 "One of my most productive days was throwing away 1000 lines of code." - Ken Thompson
-"You can have the project: Done On Time. Done On Budget. Done Properly - Pick two." - Anonymous
 “Before software can be reusable it first has to be usable.” – Ralph Johnson
 "The best thing about a boolean is even if you are wrong, you are only off by a bit." - Anonymous
 "Programming is like pinball. The reward for doing it is the opportunity of doing it again." - Anonymous

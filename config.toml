@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"You can have the project: Done On Time. Done On Budget. Done Properly - Pick two." - Anonymous"""
+    tagline = """“I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing.” - Oktal"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
