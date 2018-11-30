@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"There is nothing more unproductive than to build something efficiently that should not have been built at all." - Milt Bryce"""
+    tagline = """"Measuring programming progress by lines of code is like measuring aircraft building progress by weight." - Bill Gates"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
