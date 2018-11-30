@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"A good programmer is someone who always looks both ways before crossing a one-way street." - Doug Linder"""
+    tagline = """\"A good programmer is someone who always looks both ways before crossing a one-way street.\""""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
