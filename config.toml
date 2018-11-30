@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want."- Niklaus Wirth"""
+    tagline = """"In programming, the hard part isn't solving problems, but deciding what problems to solve." - Paul Graham"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
