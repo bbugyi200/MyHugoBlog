@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"Measuring programming progress by lines of code is like measuring aircraft building progress by weight." - Bill Gates"""
+    tagline = """"The best thing about a boolean is even if you are wrong, you are only off by a bit.""""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
