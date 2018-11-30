@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"One of my most productive days was throwing away 1000 lines of code." - Ken Thompson"""
+    tagline = """"In programming, the hard part isn't solving problems, but deciding what problems to solve." - Paul Graham"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
