@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"So much complexity in software comes from trying to make one thing do two things." – Ryan Singer"""
+    tagline = """"You can have the project: Done On Time. Done On Budget. Done Properly - Pick two." - Anonymous"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
