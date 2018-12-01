@@ -75,6 +75,7 @@ alias vgrep='cat $RECENTLY_EDITED_FILES_LOG | xargs grep'
 
 * Checkout the [vim-startify] plugin for a heavier (but more powerful) alternative to the script discussed above.
 
-* The `:oldfiles` command in vim produces a list of recently edited files. For more information, run `:h :oldfiles` from within vim.
+* The `:oldfiles` command in vim produces a list of recently edited files. See [:help :oldfiles][oldfiles] for more information.
 
 [vim-startify]: https://github.com/mhinz/vim-startify
+[oldfiles]: http://vimdoc.sourceforge.net/htmldoc/starting.html#:oldfiles

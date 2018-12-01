@@ -7,7 +7,7 @@ image = "https://bryanbugyi.com/images/BB.jpeg"
 draft = true
 +++
 
-First off, let me explain what I mean when I say *hack*. When selecting which hacks (e.g. tips, tricks, whatever) to include in this article, I really only held myself accountable for one rule: **each hack must be original**. As in no plugins and no hijacked StackOverflow answers. So, at the very least, it is unlikely that you have seen any of these tricks before.
+When selecting which hacks (e.g. tips, tricks, whatever) to include in this article, I really only held myself accountable for one rule: **each hack must be original**; as in no plugins and no hijacked StackOverflow answers. So, at the very least, it is unlikely that you have seen any of these tricks before.
 
 Given this constraint, however, I would be surprised if any one of these hacks blows you out of your seat. My only hope is that you find at least one of them useful. With regards to this goal, I am more confident.
 
