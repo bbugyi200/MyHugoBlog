@@ -7,7 +7,7 @@ image = "https://bryanbugyi.com/images/BB.jpeg"
 draft = true
 +++
 
-When selecting which hacks (e.g. tips, tricks, whatever) to include in this article, I really only held myself accountable for one rule: **each hack must be original**; as in no plugins and no hijacked StackOverflow answers. So, at the very least, it is unlikely that you have seen any of these tricks before.
+First off, let me explain what I mean when I say *hack*. When selecting which hacks (e.g. tips, tricks, whatever) to include in this article, I really only held myself accountable for one rule: **each hack must be original**; as in no plugins and no hijacked StackOverflow answers. So, at the very least, it is unlikely that you have seen any of these tricks before.
 
 Given this constraint, however, I would be surprised if any one of these hacks blows you out of your seat. My only hope is that you find at least one of them useful. With regards to this goal, I am more confident.
 
@@ -36,18 +36,37 @@ nnoremap \<Del> :<C-u>execute "bdelete " . v:count<CR>
 {{% notice note %}}
 The difference between `v:count` and `v:count1` is that `v:count` defaults to zero when no count is provided, whereas `v:count1` defaults to one.
 
-For more information, see [this][vcount-w] Vim Tips Wiki article and [:help v:count][vcount-h].
+For more information, refer to [this][vcount-w] Vim Tips Wiki article and/or [:help v:count][vcount-h].
 {{% /notice %}}
 
 ## Hack #2: A Vimscript Function for Maintaining Comment Boxes
 
+Not much to say about this one---since I've already posted a separate article explaining this hack in detail---but here's a demo anyway:
+
+<img src="/images/MakeBox_Demo.gif" alt="Demonstration GIF for MakeBox Function"/>
+
+You can find the full story [here][comment-boxes].
+
 ## Hack #3: A Useful Mnemonic for Key Bindings used to Edit Special Files
 
-## Hack #4: One Key Binding is all you Need
+{{< highlight Vim >}}
+" 
+nnoremap <Leader>0s :e /home/bryan/.vim/vim-snippets/<C-R>=&filetype<CR>.snippets<CR>
+nnoremap <Leader>0ls :e <C-R>=getcwd()<CR>/<C-R>=&filetype<CR>.snippets<CR>
+nnoremap <Leader>0S :e /home/bryan/.vim/vim-snippets/all.snippets<CR>
 
-## Hack #5: A Pair of Key Bindings that Allow you to Quickly Delete Files and / or vim Buffers
+" 
+nnoremap <Leader>0v :e ~/.vim/ftplugin/<C-R>=&filetype<CR>.vim<CR>
+nnoremap <Leader>0lv :e <C-R>=getcwd()<CR>/.lvimrc<CR>
+nnoremap <Leader>0V :e /home/bryan/.vim/vimrc<CR>
+{{< /highlight >}}
 
-## Extra Credit: Manage your bashrc / zshrc Aliases and Functions using Macros
+## Hack #4: Easy Way to Override a Key Binding for Each Filetype
+
+## Hack #5: A Pair of Key Bindings that Allow you to Quickly Delete Files and/or vim Buffers
+
+## Extra Credit: Manage your bashrc/zshrc Aliases and Functions using Macros
 
 [vcount-w]: http://vim.wikia.com/wiki/Invoke_a_function_with_a_count_prefix
 [vcount-h]: http://vimdoc.sourceforge.net/htmldoc/eval.html#v:count
+[comment-boxes]: https://bryanbugyi.com/blog/creating-comment-boxes-in-vim
