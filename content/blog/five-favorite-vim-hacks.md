@@ -50,15 +50,37 @@ You can find the full story [here][comment-boxes].
 ## Hack #3: A Useful Mnemonic for Key Bindings used to Edit Special Files
 
 {{< highlight Vim >}}
-" 
-nnoremap <Leader>0s :e /home/bryan/.vim/vim-snippets/<C-R>=&filetype<CR>.snippets<CR>
-nnoremap <Leader>0ls :e <C-R>=getcwd()<CR>/<C-R>=&filetype<CR>.snippets<CR>
-nnoremap <Leader>0S :e /home/bryan/.vim/vim-snippets/all.snippets<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Create mappings to open 'file' in current window, to open 'file' using      "
+" a horizontal split, and to open 'file' using a vertical split.              "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! s:MapEditCommands(chars, file)
+    execute "nnoremap <Leader>0" . a:chars . " :e " . a:file . "<CR>"
+    execute "nnoremap <Leader>_" . a:chars . " :sp " . a:file . "<CR>"
+    execute "nnoremap <Leader>\\|" . a:chars . " :vs " . a:file . "<CR>"
+endfunction
 
-" 
-nnoremap <Leader>0v :e ~/.vim/ftplugin/<C-R>=&filetype<CR>.vim<CR>
-nnoremap <Leader>0lv :e <C-R>=getcwd()<CR>/.lvimrc<CR>
-nnoremap <Leader>0V :e /home/bryan/.vim/vimrc<CR>
+
+" ########## Snippets ##########
+" Snippet file for this filetype.
+call s:MapEditCommands("s", "/home/bryan/.vim/vim-snippets/<C-R>=&filetype<CR>.snippets")
+
+" Snippet file for this filetype and local to (only active in) the current project
+call s:MapEditCommands("ls", "<C-R>=getcwd()<CR>/<C-R>=&filetype<CR>.snippets")
+
+" Global snippet file
+call s:MapEditCommands("S", "/home/bryan/.vim/vim-snippets/all.snippets")
+
+
+" ########## Vimscript Files ##########
+" Vim configuration that are only active for this filetype
+call s:MapEditCommands("v", "~/.vim/ftplugin/<C-R>=&filetype<CR>.vim")
+
+" Vim configuration that are only active for this filetype and are local to (only active in) the current project.
+call s:MapEditCommands("lv", "<C-R>=getcwd()<CR>/.lvimrc")
+
+" Global vim configurations (vimrc file)
+call s:MapEditCommands("V", "/home/bryan/.vim/vimrc")
 {{< /highlight >}}
 
 ## Hack #4: Easy Way to Override a Key Binding for Each Filetype
