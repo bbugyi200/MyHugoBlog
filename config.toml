@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"What one programmer can do in one month, two programmers can do in two months." - Fred Brooks"""
+    tagline = """"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." - Martin Golding"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
