@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """"Programming is being ten minutes away from being done for the rest of your life." - Jon Maddox"""
+    tagline = """"There is nothing more unproductive than to build something efficiently that should not have been built at all." - Milt Bryce"""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
