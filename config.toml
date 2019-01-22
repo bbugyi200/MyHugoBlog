@@ -31,7 +31,7 @@ title = "A Tech Blog by Bryan Bugyi"
     logoBig = "/images/BB-256.svg"
     logoSmall = "/images/BB-64.svg"
     opengraphImage = "/images/BB-128.svg"
-    tagline = """“Before software can be reusable it first has to be usable.” – Ralph Johnson"""
+    tagline = """"They don't make bugs like Bunny anymore." - Olav Mjelde."""
     twitter = "bryan_bugyi"
 
 [[menu.main]]
