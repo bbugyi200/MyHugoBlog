@@ -13,7 +13,7 @@ theme = "osprey"
 title = "A Tech Blog by Bryan Bugyi"
 
 [Params]
-    ajaxFormspree = false
+    ajaxFormspree = true
     author = "Bryan Bugyi"
     cacheBustCSS = false
     cacheBustJS = false
